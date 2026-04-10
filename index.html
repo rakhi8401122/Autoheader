@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <main>
+        <h1>Welcome to my Post</h1>
+        <p>Ye aapka post content hai.</p>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        // Header load karne ke liye
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Footer load karne ke liye
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
+
