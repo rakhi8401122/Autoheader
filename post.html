@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harappa Sabhyata: Ek Rahasya | My Education Portal</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; background-color: #f4f4f4; }
+        .container { max-width: 900px; margin: 20px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .post-header h1 { color: #2c3e50; font-size: 2.5rem; margin-bottom: 10px; }
+        .meta-info { color: #7f8c8d; font-size: 0.9rem; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .post-image { width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px; }
+        .content h2 { color: #e67e22; border-left: 5px solid #e67e22; padding-left: 10px; margin-top: 30px; }
+        .content p { margin-bottom: 15px; text-align: justify; }
+        .highlight { background: #fff3cd; padding: 2px 5px; border-radius: 3px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <div class="container">
+        <article class="post">
+            <header class="post-header">
+                <h1>Harappa Sabhyata: Sindhu Ghati ki Khoj aur Itihas</h1>
+                <div class="meta-info">
+                    Post By: <strong>Rahul Kumar</strong> | Date: April 10, 2026 | Category: History
+                </div>
+            </header>
+
+            <img src="https://images.unsplash.com/photo-1599408162165-43093414995a?q=80&w=1000&auto=format&fit=crop" alt="Harappa Civilization Ruins" class="post-image">
+
+            <div class="content">
+                <p>Sindhu Ghati ki Sabhyata, jise <strong>Harappa Sabhyata</strong> bhi kaha jata hai, duniya ki sabse purani aur vikasit shahri sabhyaton mein se ek thi. Iski khoj ne bharatiya itihas ko hazaron saal piche dhakel diya aur humein bataya ki hamare purvaj kitne vikasit the.</p>
+
+                <h2>Harappa ki Khoj Kab aur Kaise Hui?</h2>
+                <p>Is sabhyata ka pata sabse pehle 1921 mein chala jab <span class="highlight">Daya Ram Sahni</span> ne Punjab (Pakistan) ke Harappa namak sthan par khudai karvayi. Iske thik ek saal baad, 1922 mein R.D. Banerji ne Mohenjodaro ki khoj ki. In dono shahron ne puri duniya ko hairan kar diya.</p>
+
+                <h2>Nagar Niyojan (Town Planning)</h2>
+                <p>Harappa sabhyata ki sabse khaas baat yahan ka <strong>Nagar Niyojan</strong> tha. Shahar do hisson mein bante hote the: ek uncha hissa (Citadel) aur ek nichla shahar. Yahan ki sadkein ek dusre ko samkon (90 degree) par katti thin, jo dikhata hai ki unka engineering dimaag kitna tez tha.</p>
+
+                <ul>
+                    <li><strong>Drainage System:</strong> Yahan ki naliyan dhaki hui hoti thin aur safai ka pura dhyan rakha jata tha.</li>
+                    <li><strong>Great Bath:</strong> Mohenjodaro mein ek vishal snanagar mila hai, jo shayad dharmik kaamon ke liye use hota tha.</li>
+                    <li><strong>Lothal Port:</strong> Gujarat ka Lothal us samay ka ek pramukh bandargah (port) tha jahan se videshi vyapar hota tha.</li>
+                </ul>
+
+                <h2>Arthvyavastha aur Vyapar</h2>
+                <p>Yahan ke log kheti aur vyapar dono karte the. Gehu, jau, aur kapas ki kheti pramukh thi. Duniya mein sabse pehle kapas (Cotton) ugane ka shrey bhi Sindhu sabhyata ke logon ko hi jata hai. Inka vyapar aaj ke Mesopotamia (Iraq) tak phaila hua tha.</p>
+
+                <p>Ant mein, yeh sabhyata kaise khatam hui, is par aaj bhi itihaskaron mein matbhed hai. Kuch log baadh (Flood) ko karan mante hain toh kuch jalvayu parivartan ko. Lekin isne jo virasat chhodi hai, wo aaj bhi bemisaal hai.</p>
+            </div>
+        </article>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // Header load karne ke liye
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(err => console.error("Header load nahi ho saka", err));
+
+        // Footer load karne ke liye
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(err => console.error("Footer load nahi ho saka", err));
+    </script>
+
+</body>
+</html>
+
